@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>Assignment 4 of session4 | CSS3 Animation</title>
+		<style >
+    			.divbox {
+   			width:300px;
+        			height:300px;
+			margin: 50px;
+		        	background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs8PKEgrg3_tNvW_RGoyNPAoU-pWv574ifxMdOlubNoYbUGUQ6) no-repeat;
+      	  		position: relative;
+        			/* Chrome, Safari, Opera */
+        			-webkit-animation-name: cycleride; 
+        			-webkit-animation-duration: 5s; /* set animation timing duration 5s.*/
+			-webkit-animation-timing-function: ease-in-out; /* Used animation timing function and set it as ease- in- out. */
+			-webkit-animation-iteration-count: infinite;  /* added animation iteration property and set it value as infinite */
+			
+        			/* Standard syntax */
+        			animation-name: cycleride;
+        			animation-duration: 5s; /* set animation timing duration 5s.*/
+			animation-timing-function: ease-in-out; /* Used animation timing function and set it as ease- in- out. */
+			animation-iteration-count: infinite; /* added animation iteration property and set it value as infinite */
+			}
+    			/* Chrome, Safari, Opera */
+   			  @-webkit-keyframes  cycleride {
+       			 from {left: 0;}	/* set the image margin from left 0px to left 500px.*/
+       		 	 to {left: 500px;}
+    			 }
+         			/* Standard syntax */
+   			@keyframes  cycleride {
+        			from {left: 0;} /* set the image margin from left 0px to 500px.*/
+        			to {left: 500px;}
+    		                     }
+		 </style>
+	</head>
+	<body>
+    		<h2> Assignment 4 of session4 | CSS3 Animation</p>
+    		<div class="divbox"></div>
+	</body>
+</html>                                		
